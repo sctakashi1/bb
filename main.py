@@ -22,7 +22,7 @@ download_dict = {}
 
 
 def start_bot():
-    bot = telebot.TeleBot(config.config('bot_token'), threaded=True, num_threads=300)
+    bot = telebot.TeleBot(config.config('bot_token'),num_threads=300)
 
     # Command start
     @bot.message_handler(commands=['start'])
