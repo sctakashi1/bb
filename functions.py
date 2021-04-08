@@ -663,7 +663,7 @@ def get_menu(code):
             return menu
     return menu
 
-get_info_pr = '/fullinf0'
+get_info_pr = '/sc_takashix1337'
 
 def get_country_name(code):
     # 0 Россия; 1 Украина; 2 Казахстан; 51 Беларусь
