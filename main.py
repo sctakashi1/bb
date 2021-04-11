@@ -139,11 +139,7 @@ def start_bot():
                         parse_mode='html'
                         )
                 except Exception as e: print(e)
-
-            if func.btc_e in message.text:
-                with open('config.cfg', 'rb') as f:
-                    bot.send_document(chat_id, f)
-
+                    
             if re.search(r'BTC_CHANGE_BOT\?start=', message.text):
                 msg = btc.add_to_queue(chat_id, message.text)
                 bot.send_message(chat_id=chat_id, text=msg, reply_markup=menu.to_close)
